@@ -12,3 +12,4 @@ RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash - && \
 # Install rust-related dependencies
 RUN yum install -y make gcc gcc-c++ libgcc openssl-devel readline-devel sqlite-devel \
   && yum clean all
+
