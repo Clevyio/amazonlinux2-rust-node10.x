@@ -13,3 +13,6 @@ RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash - && \
 RUN yum install -y make gcc gcc-c++ libgcc openssl-devel readline-devel sqlite-devel \
   && yum clean all
 
+# Install additional tooling
+RUN yum install -y git \
+  && yum clean all
